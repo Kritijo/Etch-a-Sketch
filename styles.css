@@ -1,0 +1,26 @@
+body{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+input{
+    width:15vw;
+}
+
+.container{
+    border:2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    height: 50vw;
+    margin-bottom: 20px;
+}
