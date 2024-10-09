@@ -10,6 +10,7 @@ body{
 
 *{
     box-sizing: border-box;
+    background-color: #fbd8e3;
 }
 
 input{
@@ -17,7 +18,7 @@ input{
 }
 
 .container{
-    border:2px solid black;
+    border:3px solid black;
     display: flex;
     flex-wrap: wrap;
     width: 48vw;
