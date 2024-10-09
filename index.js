@@ -29,9 +29,22 @@ function changeColor(cell){
 }
 
 let cells = document.querySelectorAll(".cell");
+let drawingActive = false;
 
-function hover(){
-    cells.forEach(cell => 
-        cell.addEventListener("mouseover",()=>changeColor(cell))
-    );
-}
+document.addEventListener("mouseover", (event) => {
+    if (event.target.classList.contains('cell') && drawingActive) {
+        changeColor(event.target);
+    }
+});
+
+document.addEventListener("keydown", (e)=>{
+    if(e.metaKey){
+        drawingActive = true;
+    }
+});
+
+document.addEventListener("keyup", () => {
+    drawingActive = false; 
+    }
+);
+
