@@ -1,6 +1,7 @@
 container = document.querySelector(".container")
 
 function createDivs(n = 16){
+    container.textContent = '';
     for(let i = 0; i<n ; i++){
         let colDiv = document.createElement("div");
         colDiv.style.flex = "auto";
@@ -17,6 +18,15 @@ function createDivs(n = 16){
 }
 
 createDivs();
+
+let slider = document.querySelector("#grid-size");
+let output = document.querySelector("output");
+
+slider.addEventListener("input",()=>{
+    output.value = slider.value;
+})
+
+slider.addEventListener("mouseup",()=>createDivs(output.value));
 
 function changeColor(cell){
     const colours = [
