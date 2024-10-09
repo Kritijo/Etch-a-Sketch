@@ -24,3 +24,7 @@ input{
     width: 48vw;
     height: 48vw;
 }
+
+.cell{
+    border: 0.1px solid white;
+}
