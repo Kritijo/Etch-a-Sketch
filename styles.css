@@ -5,6 +5,7 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    list-style-position: inside;
 }
 
 *{
@@ -24,6 +25,7 @@ input{
     flex-wrap: wrap;
     width: 48vw;
     height: 48vw;
+    margin-bottom: 10px;
 }
 
 .cell{
@@ -32,4 +34,14 @@ input{
 
 h1{
     font-size: 48px;    
+}
+
+.info h2{
+    text-align: center;
+    font-size: 28px;
+}
+
+.info ul{
+    padding: 20px;
+    font-size: 18px;
 }
