@@ -9,8 +9,8 @@
 <body>
     <h1>Etch-a-Sketch</h1>
     <div class="input-div">
-        <input type="number" name="size" placeholder="Choose a grid size (1-100)" min="1" max="100" >
-        <button class="sumbit">Submit</button>
+        <input id="grid-size" type="range" min="1" max="100" value="16" oninput="this.nextElementSibling.value = this.value">
+        <output>16</output>
     </div>
     <div class="container"></div>
 </body>
