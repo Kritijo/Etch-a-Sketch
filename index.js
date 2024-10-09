@@ -17,3 +17,13 @@ function createDivs(n = 16){
 }
 
 createDivs();
+
+let cells = document.querySelectorAll(".cell");
+
+function hover(){
+    cells.forEach(cell => 
+        cell.addEventListener("mouseover",()=>changeColor(cell))
+    );
+}
+
+hover();
