@@ -1,47 +1,49 @@
 body{
     padding-top: 15px;
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     list-style-position: inside;
+    background-color: #faf3ea;
 }
 
 *{
     box-sizing: border-box;
-    background-color: #faf3ea;
     margin:0;
     padding:0;
 }
 
 input{
-    width:15vw;
+    width:180px;
 }
 
 .container{
     border:3px solid black;
     display: flex;
     flex-wrap: wrap;
-    width: 48vw;
-    height: 48vw;
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 300px;
+    width: 50%;
+    height: 100%;
     margin-bottom: 10px;
+    background-color: black;
 }
 
-.cell{
-    border: 0.1px solid rgba(255,255,255,0.2);
-}
 
 h1{
-    font-size: 48px;    
+    font-size: 45px;    
 }
 
 .info h2{
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .info ul{
-    padding: 20px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 15px;
 }
